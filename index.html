@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        body {
+            font-family: "Hind Siliguri", sans-serif;
+        }
         .day-task li:last-child {
             border-bottom: inherit;
         }
@@ -18,8 +24,9 @@
                 <a href="#" class="font-bold text-2xl"> Smart To Do </a>
                 <span class="block text-xs">  By Jihadur Rahman Noyon </span>
             </div>
-            <div class="progres-bar">
-                
+            <div class="progres-bar mt-5 text-center">
+                <label for="taskprogress"> Task Report </label> <br>
+                <progress id="taskprogress" value="32" max="100"> 32% </progress>
             </div>
         </div>
     </header>
@@ -29,13 +36,35 @@
                 <input type="text" name="task" id="taskinput" class="rounded-md p-2 border border-solid border-gray-200 mb-2" placeholder="Write Your Task" required>
                 <input type="text" name="task" id="taskinput" class="rounded-md p-2 border border-solid border-gray-200 mb-2" placeholder="Add Optional Text">
                 <div class="days flex justify-between mb-2">
-                    <input type="checkbox" name="taskday" id="taskday"> Sat
-                    <input type="checkbox" name="taskday" id="taskday"> Sun
-                    <input type="checkbox" name="taskday" id="taskday"> Mon
-                    <input type="checkbox" name="taskday" id="taskday"> Tues
-                    <input type="checkbox" name="taskday" id="taskday"> Wed
-                    <input type="checkbox" name="taskday" id="taskday"> Thu
-                    <input type="checkbox" name="taskday" id="taskday"> Fri
+                    <span>
+                        <input type="checkbox" name="taskday" id="taskday">
+                        <label for="taskday">Sat</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="taskday" id="taskday">
+                        <label for="taskday">Sun</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="taskday" id="taskday">
+                        <label for="taskday">Mon</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="taskday" id="taskday">
+                        <label for="taskday">Tues</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="taskday" id="taskday">
+                        <label for="taskday">Wed</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="taskday" id="taskday">
+                        <label for="taskday">Thurs</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="taskday" id="fri">
+                        <label for="fri">Fri</label>
+                    </span>
+                    
                 </div>
                 <input type="submit" value="Add Task" class="bg-green-700 text-white p-2 rounded-md">
             </div>
