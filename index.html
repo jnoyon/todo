@@ -35,34 +35,38 @@
             <div class="task-form flex flex-col">
                 <input type="text" name="task" id="taskinput" class="rounded-md p-2 border border-solid border-gray-200 mb-2" placeholder="Write Your Task" required>
                 <input type="text" name="task" id="taskinput" class="rounded-md p-2 border border-solid border-gray-200 mb-2" placeholder="Add Optional Text">
-                <div class="days flex justify-between mb-2">
+                <div class="days grid grid-cols-4 mb-2">
                     <span>
-                        <input type="checkbox" name="taskday" id="taskday">
-                        <label for="taskday">Sat</label>
+                        <input type="checkbox" name="taskday" id="sat">
+                        <label for="sat">Sat</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="taskday" id="taskday">
-                        <label for="taskday">Sun</label>
+                        <input type="checkbox" name="taskday" id="sun">
+                        <label for="sun">Sun</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="taskday" id="taskday">
-                        <label for="taskday">Mon</label>
+                        <input type="checkbox" name="taskday" id="mon">
+                        <label for="mon">Mon</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="taskday" id="taskday">
-                        <label for="taskday">Tues</label>
+                        <input type="checkbox" name="taskday" id="tues">
+                        <label for="tues">Tues</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="taskday" id="taskday">
-                        <label for="taskday">Wed</label>
+                        <input type="checkbox" name="taskday" id="wed">
+                        <label for="wed">Wed</label>
                     </span>
                     <span>
-                        <input type="checkbox" name="taskday" id="taskday">
-                        <label for="taskday">Thurs</label>
+                        <input type="checkbox" name="taskday" id="thu">
+                        <label for="thu">Thu</label>
                     </span>
                     <span>
                         <input type="checkbox" name="taskday" id="fri">
                         <label for="fri">Fri</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="taskday" id="others">
+                        <label for="others">Others</label>
                     </span>
                     
                 </div>
@@ -70,8 +74,8 @@
             </div>
         </div>
     </section>
-    <section class="task-list-area">
-        <div class="container w-11/12 py-5 mx-auto">
+    <section class="task-list-area py-5">
+        <div class="container w-11/12 mx-auto">
 
             <div class="day-task shadow-md mb-7">
                 <h1 class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold p-2 text-white"> Saturday </h1>
@@ -129,5 +133,13 @@
 
         </div>
     </section>
+
+    <footer class="footer-area">
+        <div class="container w-11/12 mx-auto">
+            <div class="footer">
+                <p class="text-center border-t border-solid border-gray-300 p-3"> Follow on <a href="https://github.com/jnoyon"> Github </a> </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
